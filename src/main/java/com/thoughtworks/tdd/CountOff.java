@@ -8,6 +8,9 @@ public class CountOff {
         if (order%5 == 0) {
             return "Buzz";
         }
+        if (order%7 == 0) {
+            return "Whizz";
+        }
         return String.valueOf(order);
     }
 }
