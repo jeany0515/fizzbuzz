@@ -36,4 +36,16 @@ public class CountOffTest {
         //then
         assertEquals(actual, "Fizz");
     }
+
+    @Test
+    public void should_return_Buzz_when_count_off_given_order_5_in_line() {
+        //given
+        int order = 5;
+
+        //when
+        String actual = countOff.count(order);
+
+        //then
+        assertEquals(actual, "Buzz");
+    }
 }
