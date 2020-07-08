@@ -9,6 +9,9 @@ public class CountOff {
     public static final int DIVIDE_NUMBER_7 = 7;
 
     public String count(int order) {
+        if (isDivideBy3(order) && isDivideBy5(order) && isDivideBy7(order)) {
+            return FIZZ + BUZZ + WHIZZ;
+        }
         if (isDivideBy3(order) && isDivideBy5(order)) {
             return FIZZ + BUZZ;
         }

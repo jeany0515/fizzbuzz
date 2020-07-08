@@ -96,4 +96,28 @@ public class CountOffTest {
         //then
         assertEquals(actual, "BuzzWhizz");
     }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_count_off_given_order_105_in_line() {
+        //given
+        int order = 105;
+
+        //when
+        String actual = countOff.count(order);
+
+        //then
+        assertEquals(actual, "FizzBuzzWhizz");
+    }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_count_off_given_order_315_in_line() {
+        //given
+        int order = 315;
+
+        //when
+        String actual = countOff.count(order);
+
+        //then
+        assertEquals(actual, "FizzBuzzWhizz");
+    }
 }
