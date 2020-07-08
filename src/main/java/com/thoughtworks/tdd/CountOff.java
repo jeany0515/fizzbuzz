@@ -12,6 +12,12 @@ public class CountOff {
         if (isDivideBy3(order) && isDivideBy5(order)) {
             return FIZZ + BUZZ;
         }
+        if (isDivideBy3(order) && isDivideBy7(order)) {
+            return FIZZ + WHIZZ;
+        }
+        if (isDivideBy5(order) && isDivideBy7(order)) {
+            return BUZZ + WHIZZ;
+        }
         if (isDivideBy3(order)) {
             return FIZZ;
         }
