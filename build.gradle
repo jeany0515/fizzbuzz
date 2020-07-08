@@ -35,6 +35,10 @@ repositories {
     maven { url "https://plugins.gradle.org/m2/" }
 }
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
 
