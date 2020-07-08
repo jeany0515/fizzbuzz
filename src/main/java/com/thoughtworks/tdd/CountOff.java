@@ -1,28 +1,36 @@
 package com.thoughtworks.tdd;
 
 public class CountOff {
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
+    public static final int DIVIDE_NUMBER_3 = 3;
+    public static final int DIVIDE_NUMBER_5 = 5;
+    public static final int DIVIDE_NUMBER_7 = 7;
+
     public String count(int order) {
         if (isDivideBy3(order)) {
-            return "Fizz";
+
+            return FIZZ;
         }
         if (isDivideBy5(order)) {
-            return "Buzz";
+            return BUZZ;
         }
         if (isDivideBy7(order)) {
-            return "Whizz";
+            return WHIZZ;
         }
         return String.valueOf(order);
     }
 
     private boolean isDivideBy3(int order) {
-        return order%3 == 0;
+        return order% DIVIDE_NUMBER_3 == 0;
     }
 
     private boolean isDivideBy5(int order) {
-        return order%5 == 0;
+        return order% DIVIDE_NUMBER_5 == 0;
     }
 
     private boolean isDivideBy7(int order) {
-        return order%7 == 0;
+        return order% DIVIDE_NUMBER_7 == 0;
     }
 }
